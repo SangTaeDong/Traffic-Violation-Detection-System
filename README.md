@@ -1,14 +1,6 @@
-# Traffic-Violation-Detection-System
+### 2022 상명대 소프트웨어공학과
+### 캡스톤 디자인 🎉우수상🎉
 
-
-## Model
-https://www.dropbox.com/scl/fo/75lr8oudf7qrja78kodoy/h?dl=0&rlkey=elb4o3xe4xkp787eituxqfmda
-
-전체 파일 다 최상위에 넣어주시면 됩니다
-
-Lane Detect Model 출처
----
-https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=197
     
 ## 💡서비스 내용
 
@@ -157,7 +149,15 @@ AWS의 GPU cost 문제로 인해 업로드하지 못하였음.
 
 [https://aver1001.github.io](https://aver1001.github.io/)
 
-환경
+#### 모델
+https://www.dropbox.com/scl/fo/75lr8oudf7qrja78kodoy/h?dl=0&rlkey=elb4o3xe4xkp787eituxqfmda
+
+전체 파일 다 최상위에 넣어주시면 됩니다
+
+#### Lane Detect Model 출처
+https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=197
+
+#### 환경
 ---
 Python                       3.8.10
 
