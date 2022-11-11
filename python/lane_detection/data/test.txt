@@ -1,0 +1,10 @@
+/media/TestSet/차선-횡단보도 인지 영상(수도권)/image/2
+/media/TestSet/차선-횡단보도 인지 영상(수도권)/image/12
+/media/TestSet/차선-횡단보도 인지 영상(수도권)/image/22
+/media/TestSet/차선-횡단보도 인지 영상(수도권)/image/32
+/media/TestSet/차선-횡단보도 인지 영상(수도권)/image/42
+/media/TestSet/차선-횡단보도 인지 영상(광역시,고속도로,국도 등)/image/2
+/media/TestSet/차선-횡단보도 인지 영상(광역시,고속도로,국도 등)/image/12
+/media/TestSet/차선-횡단보도 인지 영상(광역시,고속도로,국도 등)/image/22
+/media/TestSet/차선-횡단보도 인지 영상(광역시,고속도로,국도 등)/image/32
+/media/TestSet/차선-횡단보도 인지 영상(광역시,고속도로,국도 등)/image/42

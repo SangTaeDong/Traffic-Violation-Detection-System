@@ -1,0 +1,259 @@
+{
+    "image": {
+        "file_name": "37_3.png",
+        "image_size": [
+            1464,
+            1936
+        ]
+    },
+    "annotations": [
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "solid"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 1,
+                    "y": 1167
+                },
+                {
+                    "x": 0,
+                    "y": 1173
+                },
+                {
+                    "x": 763,
+                    "y": 879
+                },
+                {
+                    "x": 894,
+                    "y": 837
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "dotted"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 912,
+                    "y": 830
+                },
+                {
+                    "x": 937,
+                    "y": 819
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "solid"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 948,
+                    "y": 819
+                },
+                {
+                    "x": 1023,
+                    "y": 797
+                },
+                {
+                    "x": 1113,
+                    "y": 770
+                },
+                {
+                    "x": 1123,
+                    "y": 762
+                },
+                {
+                    "x": 1096,
+                    "y": 761
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "yellow"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "solid"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 1167,
+                    "y": 756
+                },
+                {
+                    "x": 1183,
+                    "y": 759
+                },
+                {
+                    "x": 1173,
+                    "y": 770
+                },
+                {
+                    "x": 987,
+                    "y": 854
+                },
+                {
+                    "x": 775,
+                    "y": 1002
+                },
+                {
+                    "x": 259,
+                    "y": 1452
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "solid"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 1353,
+                    "y": 1460
+                },
+                {
+                    "x": 1222,
+                    "y": 1160
+                },
+                {
+                    "x": 1194,
+                    "y": 1002
+                },
+                {
+                    "x": 1186,
+                    "y": 923
+                },
+                {
+                    "x": 1195,
+                    "y": 867
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "solid"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 1201,
+                    "y": 845
+                },
+                {
+                    "x": 1221,
+                    "y": 795
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "dotted"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 1227,
+                    "y": 791
+                },
+                {
+                    "x": 1225,
+                    "y": 791
+                },
+                {
+                    "x": 1229,
+                    "y": 786
+                }
+            ]
+        },
+        {
+            "class": "traffic_lane",
+            "attributes": [
+                {
+                    "code": "lane_color",
+                    "value": "white"
+                },
+                {
+                    "code": "lane_type",
+                    "value": "solid"
+                }
+            ],
+            "category": "polyline",
+            "data": [
+                {
+                    "x": 1227,
+                    "y": 756
+                },
+                {
+                    "x": 1247,
+                    "y": 761
+                },
+                {
+                    "x": 1240,
+                    "y": 775
+                }
+            ]
+        }
+    ]
+}
