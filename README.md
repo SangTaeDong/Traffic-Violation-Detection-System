@@ -13,32 +13,9 @@
 **프로젝트 소개 사이트**
 [https://aver1001.github.io](https://aver1001.github.io/)
 
-[KakaoTalk_Video_2022-10-27-11-06-10.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2ad884a7-b2e0-4603-b361-18741b58b873/KakaoTalk_Video_2022-10-27-11-06-10.mp4)
 
 </aside>
 
-<aside>
-<img src="/icons/layers_gray.svg" alt="/icons/layers_gray.svg" width="40px" /> **System**
-Python, Pytorch, OpenCv
-
-</aside>
-
----
-
-AWS GPU COST로 인해  Front,Back 배포 X
-프로젝트 소개 사이트만 따로 제작하여 배포
-
-<aside>
-<img src="/icons/layers_gray.svg" alt="/icons/layers_gray.svg" width="40px" /> **Front-end**
-JavaScript, React, ~~Redux~~
-
-</aside>
-
-<aside>
-<img src="/icons/layers_gray.svg" alt="/icons/layers_gray.svg" width="40px" /> **Back-end**
-~~Python, Django~~
-
-</aside>
 
 > **Table of contents**
 > 
