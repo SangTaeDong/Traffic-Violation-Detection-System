@@ -1,6 +1,5 @@
 # Traffic-Violation-Detection-System
 
-<aside>
     
 ## 💡서비스 내용
 
@@ -15,14 +14,6 @@
 [https://aver1001.github.io](https://aver1001.github.io/)
 
 
-</aside>
-
-
-> **Table of contents**
-> 
-> 
-> ---
-> 
 
 ---
 
