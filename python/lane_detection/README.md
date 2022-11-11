@@ -3,6 +3,7 @@
 
 * <a href="https://arxiv.org/abs/1411.4038">FCN ResNet50</a> 기반 차선-횡단보도 Semantic Segmentation의 학습, 예측을 위한 코드와 모델을 제공합니다.
 * 백그라운드, 차선, 정지선, 횡단보도의 4개 클래스로 이미지 픽셀을 분류합니다.
+* 출처 : https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=197
 
 ## Demo
 <img src="demo/input.png" alt="input" width="512" height=256/>
