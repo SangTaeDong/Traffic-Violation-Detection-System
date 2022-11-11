@@ -1,5 +1,14 @@
 # Traffic-Violation-Detection-System
 
+
+## Model
+https://www.dropbox.com/scl/fo/75lr8oudf7qrja78kodoy/h?dl=0&rlkey=elb4o3xe4xkp787eituxqfmda
+
+전체 파일 다 최상위에 넣어주시면 됩니다
+
+Lane Detect Model 출처
+---
+https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=197
     
 ## 💡서비스 내용
 
@@ -18,24 +27,26 @@
 ---
 
 # `주제선정 동기`
+<img width="1189" alt="스크린샷 2022-11-05 오후 4 31 10" src="https://user-images.githubusercontent.com/69618305/201271167-c0b01ca6-8608-46d2-8295-fc67e0ce9d07.png">
 
-![스크린샷 2022-11-05 오후 4.31.10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/acc6f261-514b-499f-a19f-e4b553474be3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.31.10.png)
 
 교통법규 위반 **공익신고수는 급격하게 증가**하고있으며
 이로인한 **경찰의 인력난**은 날이갈수록 심해지고 있습니다.
 
-![스크린샷 2022-11-05 오후 4.33.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c75dd6f0-f537-4ce7-9f60-1cd10cc4321c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.33.06.png)
+<img width="1189" alt="스크린샷 2022-11-05 오후 4 33 06" src="https://user-images.githubusercontent.com/69618305/201271221-14781788-ff8d-45db-afb5-aea509b8e052.png">
 
 하지만 이 문제를 **기술적**으로 해결하는 것은  **굉장히 어려운 문제입니다.**
 대용량 영상, 각각 다른 영상들의 환경, 데이터의 특수성 등 해결하기 어려운 난제들이 존재합니다.
 
-![스크린샷 2022-11-05 오후 4.37.00.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe06af12-aeb3-4e10-a600-c7c81f2b6a4c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.37.00.png)
 
-하지만 이 문제를 해결하기 위해 다양한 로직을 통해 **문제를 해결**하였습니다.
+<img width="1189" alt="스크린샷 2022-11-05 오후 4 37 00" src="https://user-images.githubusercontent.com/69618305/201271286-8f04bea7-1a9e-4ccd-9594-784f43f2f726.png">
+
+이 문제를 해결하기 위해 다양한 로직을 통해 **문제를 해결** 하였습니다.
 
 # `전처리`
 
-![스크린샷 2022-11-05 오후 4.55.34.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0d6835fb-a1d4-493a-b568-c62bad9e7d46/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.55.34.png)
+<img width="1189" alt="스크린샷 2022-11-05 오후 4 55 34" src="https://user-images.githubusercontent.com/69618305/201271471-3f33b3e7-ef41-44cd-a12c-4915eb2d3c51.png">
+
 
 - **영상 정리**
     - 예외 처리를 위한 동영상 확장자 파일 분리
@@ -46,7 +57,8 @@
     (이 프레임들을 통해 Color Range, Bird Eyes View Custom 진행)
 - **Color Range Custome**
     
-    ![스크린샷 2022-11-05 오후 8.59.30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/34346cc8-a713-4dff-af04-0ecfebb83f70/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.59.30.png)
+    <img width="608" alt="스크린샷 2022-11-05 오후 8 59 30" src="https://user-images.githubusercontent.com/69618305/201271641-6bc392a6-bbc3-486c-b018-9347327e9093.png">
+
     
     - 각각의 영상의 색감이 다르기 때문에 차선들의 색영역을 조정해주는 단계.
     1. Lane Detect Model의 결과를 통해 차선을 가져온다.
@@ -54,7 +66,8 @@
     3. 노란색, 흰색 차선의 히스토그램 범위를 결정한다.
 - **Bird Eyes View, Free Sapce Custom**
     
-    ![스크린샷 2022-11-05 오후 9.02.14.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5fe00139-09a1-4c76-9577-a54839b3d962/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.02.14.png)
+    <img width="673" alt="스크린샷 2022-11-05 오후 9 02 14" src="https://user-images.githubusercontent.com/69618305/201271707-3226937d-b968-4c4d-b8bc-0e8f326e5d4a.png">
+
     
     - 각각의 화각이 달라 검출에 필요한 도로의 영역만 가져오는 단계
     1. Lane Detect Model의 결과를 통해 차선을 가져온다.
@@ -64,7 +77,8 @@
 
 # `객체검출`
 
-![스크린샷 2022-11-05 오후 4.56.32.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70e61531-5c70-457d-a3b2-49bb5f4ad9d5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.56.32.png)
+<img width="1189" alt="스크린샷 2022-11-05 오후 4 56 32" src="https://user-images.githubusercontent.com/69618305/201271796-8d93049d-9cc0-4e5f-af2c-b06287d00bce.png">
+
 
 - **Image Resize**
     - 시간복잡도를 줄이기 위해 Frame을 720*940으로 Resize
@@ -97,15 +111,18 @@
 
 # `위반검출`
 
-![스크린샷 2022-11-05 오후 4.56.55.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c2fd9e2-b756-4546-842e-7d94733e2039/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.56.55.png)
+<img width="1189" alt="스크린샷 2022-11-05 오후 4 56 55" src="https://user-images.githubusercontent.com/69618305/201271831-d7f6d3aa-f7d1-4699-ad93-dfdfd8bcbb6f.png">
+
 
 - **Car_State_Update**
     
-    ![스크린샷 2022-11-05 오후 9.26.23.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9876efd0-e177-41b4-a214-c80eef01688c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.26.23.png)
+    <img width="809" alt="스크린샷 2022-11-05 오후 9 26 23" src="https://user-images.githubusercontent.com/69618305/201271885-550115ec-0128-4f07-9206-e6872583dbb0.png">
+
     
     - 객체의 State를 정의 후 State Machine 생성하여 객체들의 State 설정
     
-    ![스크린샷 2022-11-05 오후 9.28.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d999fe34-455c-4995-a2b3-b2ee3afc7bbf/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.28.12.png)
+    <img width="793" alt="스크린샷 2022-11-05 오후 9 28 12" src="https://user-images.githubusercontent.com/69618305/201272122-96903c69-9d8e-4b89-a86b-c4f515752a01.png">
+
     
     - 객체 탐지의 오류 보정을 위해 신호등과 차선의 정보를 10프레임중 최빈값으로 설정
 - **Vioation_check**
@@ -115,13 +132,10 @@
 
 # `성능`
 
-![스크린샷 2022-11-05 오후 9.31.56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/672022dc-aa37-4a00-a1ca-09a4e701f89f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.31.56.png)
+<img width="502" alt="스크린샷 2022-11-05 오후 9 31 56" src="https://user-images.githubusercontent.com/69618305/201272172-79ea4696-01d6-4a97-b60b-c7e641b93fb0.png">
 
-# `성능개선`
 
 # `ETC..`
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/75400b02-0b5d-4c5f-ac91-827d09f84014/Untitled.png)
 
 ## **Data Labeling Program**
 
@@ -142,3 +156,150 @@ AWS의 GPU cost 문제로 인해 업로드하지 못하였음.
 프로젝트 소개 홈페이지 제작
 
 [https://aver1001.github.io](https://aver1001.github.io/)
+
+환경
+---
+Python                       3.8.10
+
+Package                      Version     
+---------------------------- ------------
+absl-py                      1.0.0       
+aiohttp                      3.8.1       
+aiosignal                    1.2.0       
+albumentations               1.1.0       
+argon2-cffi                  21.3.0      
+argon2-cffi-bindings         21.2.0      
+asttokens                    2.0.5       
+astunparse                   1.6.3       
+async-timeout                4.0.2       
+attrs                        21.4.0      
+backcall                     0.2.0       
+beautifulsoup4               4.11.1      
+bleach                       5.0.0       
+cachetools                   5.0.0       
+certifi                      2021.10.8   
+cffi                         1.15.0      
+charset-normalizer           2.0.12      
+cycler                       0.11.0      
+debugpy                      1.6.0       
+decorator                    5.1.1       
+defusedxml                   0.7.1       
+entrypoints                  0.4         
+executing                    0.8.3       
+fastjsonschema               2.15.3      
+flatbuffers                  2.0         
+fonttools                    4.33.3      
+frozenlist                   1.3.0       
+fsspec                       2022.3.0    
+gast                         0.4.0       
+google-auth                  2.6.6       
+google-auth-oauthlib         0.4.6       
+google-pasta                 0.2.0       
+grpcio                       1.46.0      
+h5py                         3.6.0       
+idna                         3.3         
+imageio                      2.19.0      
+importlib-metadata           4.11.3      
+importlib-resources          5.7.1       
+ipykernel                    6.13.0      
+ipython                      8.3.0       
+ipython-genutils             0.2.0       
+ipywidgets                   7.7.0       
+jedi                         0.18.1      
+Jinja2                       3.1.2       
+joblib                       1.1.0       
+jsonschema                   4.4.0       
+jupyter-client               7.3.0       
+jupyter-core                 4.10.0      
+jupyterlab-pygments          0.2.2       
+jupyterlab-widgets           1.1.0       
+Keras                        2.0.8       
+Keras-Preprocessing          1.1.2       
+kiwisolver                   1.4.2       
+libclang                     14.0.1      
+Markdown                     3.3.6       
+MarkupSafe                   2.1.1       
+matplotlib                   3.5.2       
+matplotlib-inline            0.1.3       
+mistune                      0.8.4       
+multidict                    6.0.2       
+nbclient                     0.6.2       
+nbconvert                    6.5.0       
+nbformat                     5.4.0       
+nest-asyncio                 1.5.5       
+networkx                     2.8         
+notebook                     6.4.11      
+numpy                        1.22.3      
+oauthlib                     3.2.0       
+opencv-contrib-python        4.6.0.66    
+opencv-python                4.5.5.64    
+opencv-python-headless       4.5.5.64    
+opt-einsum                   3.3.0       
+packaging                    21.3        
+pandas                       1.4.2       
+pandocfilters                1.5.0       
+parso                        0.8.3       
+pexpect                      4.8.0       
+pickleshare                  0.7.5       
+Pillow                       9.1.0       
+pip                          20.0.2      
+prometheus-client            0.14.1      
+prompt-toolkit               3.0.29      
+protobuf                     3.20.1      
+psutil                       5.9.0       
+ptyprocess                   0.7.0       
+pure-eval                    0.2.2       
+pyasn1                       0.4.8       
+pyasn1-modules               0.2.8       
+pycparser                    2.21        
+pyDeprecate                  0.3.2       
+Pygments                     2.12.0      
+pyparsing                    3.0.8       
+pyrsistent                   0.18.1      
+python-dateutil              2.8.2       
+pytorch-lightning            1.6.3       
+pytz                         2022.1      
+PyWavelets                   1.3.0       
+PyYAML                       6.0         
+pyzmq                        22.3.0      
+qudida                       0.0.4       
+requests                     2.27.1      
+requests-oauthlib            1.3.1       
+rsa                          4.8         
+scikit-image                 0.19.2      
+scikit-learn                 1.0.2       
+scipy                        1.8.0       
+Send2Trash                   1.8.0       
+setuptools                   45.2.0      
+six                          1.16.0      
+soupsieve                    2.3.2.post1 
+stack-data                   0.2.0       
+tensorboard                  2.9.0       
+tensorboard-data-server      0.6.1       
+tensorboard-plugin-wit       1.8.1       
+tensorflow                   2.7.0       
+tensorflow-estimator         2.7.0       
+tensorflow-io-gcs-filesystem 0.25.0      
+termcolor                    1.1.0       
+terminado                    0.13.3      
+threadpoolctl                3.1.0       
+tifffile                     2022.5.4    
+tinycss2                     1.1.1       
+torch                        1.9.0+cu111 
+torchaudio                   0.9.0       
+torchmetrics                 0.8.1       
+torchvision                  0.10.0+cu111
+tornado                      6.1         
+tqdm                         4.64.0      
+traitlets                    5.1.1       
+typing-extensions            4.2.0       
+ujson                        5.2.0       
+urllib3                      1.26.9      
+wcwidth                      0.2.5       
+webencodings                 0.5.1       
+Werkzeug                     2.1.2       
+wheel                        0.34.2      
+widgetsnbextension           3.6.0       
+wrapt                        1.14.1      
+yarl                         1.7.2       
+zipp                         3.8.0
