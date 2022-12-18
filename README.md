@@ -10,7 +10,7 @@
 전처리, 객체검출, 위반검출 3단계로 나눠 영상을 분석하고 교통법규 위반을 검출
 
 ---
-
+[![IU(아이유) _ Into the I-LAND](http://img.youtube.com/vi/_z5OozAbpUA/0.jpg)](https://www.youtube.com/watch?v=_z5OozAbpUA) 
 **프로젝트 소개 사이트**
 [https://aver1001.github.io](https://aver1001.github.io/)
 
